@@ -22,7 +22,7 @@
   
     <finalName>jenkins-tomcat</finalName>
 
-	<!-- <plugins>
+	<plugins>
 		<plugin>
 			<groupId>org.apache.tomcat.maven</groupId>
 			<artifactId>tomcat7-maven-plugin</artifactId>
@@ -45,7 +45,7 @@
 				<skipTests>true</skipTests>
 			</configuration>
 		</plugin>
-    </plugins> -->
+    </plugins>
     
   </build>
 </project>
