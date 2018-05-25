@@ -17,5 +17,37 @@
   </dependencies>
   <build>
     <finalName>jenkins-tomcat</finalName>
+
+	<plugins>
+
+		<plugin>
+			<groupId>org.codehaus.cargo</groupId>
+			<artifactId>cargo-maven2-plugin</artifactId>
+			<version>1.4.9</version>
+			<configuration>
+				<container>
+					<containerId>tomcat7x</containerId>
+					<type>remote</type>
+				</container>
+				<configuration>
+					<type>runtime</type>
+					<properties>
+						<cargo.remote.uri>http://192.168.42.129:8090/manager</cargo.remote.uri>
+						<cargo.remote.username>tomcat</cargo.remote.username>
+						<cargo.remote.password>123456</cargo.remote.password>
+					</properties>
+				</configuration>
+			</configuration>
+		</plugin>
+
+	</plugins>
+    
   </build>
 </project>
+
+
+
+
+
+
+
