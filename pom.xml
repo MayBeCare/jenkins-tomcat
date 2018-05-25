@@ -16,7 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <defaultGoal>install</defaultGoal>
   
     <finalName>jenkins-tomcat</finalName>
 
