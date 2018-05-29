@@ -36,7 +36,7 @@
 			<configuration>
 				<url>http://192.168.42.129:8090/manager/text</url>
 				<update>true</update>
-				<!-- <server>jen-tomcat</server> -->
+				<server>jen-tomcat</server>
 				<username>tomcat</username>
 				<password>123456</password>
 				<path>/${project.artifactId}</path>
