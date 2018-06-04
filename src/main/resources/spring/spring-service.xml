@@ -12,9 +12,7 @@
                            http://www.springframework.org/schema/tx
                            http://www.springframework.org/schema/tx/spring-tx.xsd
                            http://www.springframework.org/schema/aop
-                           http://www.springframework.org/schema/aop/spring-aop.xsd
-                           http://www.springframework.org/schema/task
-                           http://www.springframework.org/schema/task/spring-task.xsd">
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!--扫描service包下所有使用注解的类型-->
     <context:component-scan base-package="com.ssm.cn.service"/>
@@ -52,12 +50,5 @@
         <aop:pointcut id="transactionPointcut" expression="execution(* com.ssm.cn.service..*impl.*(..))" />
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
     </aop:config>-->
-
-    <!--spring定时任务 -->
-    <task:scheduled-tasks scheduler="myScheduler">
-        <task:scheduled ref="taskService" method="taskJob" cron="0/3 * * * * ?" />  <!--每三秒运行一次-->
-    </task:scheduled-tasks>
-
-    <task:scheduler id="myScheduler" pool-size="5"/>
 
 </beans>
