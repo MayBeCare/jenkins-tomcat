@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MianApp {
+public class MainApp {
 
 	public static void main(String[] args) {
 
